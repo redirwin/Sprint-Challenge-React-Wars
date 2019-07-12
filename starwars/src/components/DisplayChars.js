@@ -1,15 +1,21 @@
 import React from "react";
-// import styled from 'styled-components'
+import styled from "styled-components";
 
 import CharCard from "./CharCard";
 
+const CardsContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 0;
+`;
+
 export default function DisplayChars(props) {
-  console.log(props);
   return (
-    <div>
+    <CardsContainer>
       {props.charList.map(char => {
-        return <CharCard char={char} />;
+        return <CharCard char={char} key={char.name} />;
       })}
-    </div>
+    </CardsContainer>
   );
 }
