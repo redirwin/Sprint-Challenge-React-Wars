@@ -2,42 +2,38 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(255,255,255, 0.3), 0 6px 20px 0 rgba(255,255,255, 0.3);
-  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
+    0 6px 20px 0 rgba(255, 255, 255, 0.3);
   width: 15rem;
-  height; 20rem;
   min-width: 250px;
   background-color: #d6c178;
+  margin: 1rem;
   @media screen and (max-width: 400px) {
     width: 100%;
     box-shadow: none;
     border-radius: none;
   }
 
-h2 {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 1rem;
+  h2 {
+    background-color: #000;
+    color: #fff;
     text-align: center;
     border-radius: 5px 5px 0 0;
+    margin: 0;
+    padding: 1rem;
     @media screen and (max-width: 400px) {
       width: 100%;
-      // box-shadow: none;
       border-radius: none;
     }
+  }
 
-}
-
-.stats {
+  .stats {
+    color: #000;
+    border-radius: 0 0 5px 5px;
     padding: 1rem;
-    // background-color: #D6C178;
-    color: black;
-    border-radius: 0 0 5px 5px ;
-}
-
+  }
 `;
 
 export default function CharCard(props) {

@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 const HeaderContainer = styled.header`
   margin-top: 3rem;
-  margin-bottom: -1rem;
+  margin-bottom: 2rem;
   @media screen and (max-width: 400px) {
     margin-top: 5rem;
     margin-bottom: -2;
