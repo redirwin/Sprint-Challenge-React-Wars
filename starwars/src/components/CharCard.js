@@ -7,7 +7,7 @@ const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3),
     0 6px 20px 0 rgba(255, 255, 255, 0.3);
   width: 15rem;
-  min-width: 250px;
+  min-width: 300px;
   background-color: #d6c178;
   margin: 1rem;
   @media screen and (max-width: 400px) {
@@ -45,8 +45,8 @@ export default function CharCard(props) {
         <h3>Stats</h3>
         <p>Born: {props.char.birth_year}</p>
         <p>Gender: {props.char.gender}</p>
-        <p>Height: {props.char.height}</p>
-        <p>Weight: {props.char.mass} kg</p>
+        <p>Height: {(props.char.height * 0.033).toFixed(1)} feet</p>
+        <p>Weight: {(props.char.mass * 2.2).toFixed(1)} lbs</p>
       </div>
     </Card>
   );
