@@ -4,10 +4,27 @@ import styled from "styled-components";
 
 import GetChars from "./components/GetChars";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import falcon from "./assets/melfalcon.png";
 import star from "./assets/death_star.png";
 import vader from "./assets/vader.png";
 import yoda from "./assets/yoda2.png";
+
+export default function App() {
+  return (
+    <>
+      <Content className="App">
+        <img className="star" src={star} alt="Death Star" />
+        <img className="falcon" src={falcon} alt="Millennium Falcon" />
+        <img className="vader" src={vader} alt="Darth Vader" />
+        <img className="yoda" src={yoda} alt="Yoda" />
+        <Header />
+        <GetChars />
+      </Content>
+      <Footer />
+    </>
+  );
+}
 
 const Content = styled.div`
 width: 100%
@@ -139,18 +156,3 @@ align-content: center;
 }
 
 `;
-
-const App = () => {
-  return (
-    <Content className="App">
-      <img className="star" src={star} alt="Death Star" />
-      <img className="falcon" src={falcon} alt="Millennium Falcon" />
-      <img className="vader" src={vader} alt="Darth Vader" />
-      <img className="yoda" src={yoda} alt="Yoda" />
-      <Header />
-      <GetChars />
-    </Content>
-  );
-};
-
-export default App;
