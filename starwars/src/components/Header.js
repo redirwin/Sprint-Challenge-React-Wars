@@ -7,7 +7,7 @@ const HeaderContainer = styled.header`
   margin-top: 3rem;
   margin-bottom: 2rem;
   @media screen and (max-width: 400px) {
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: -2;
     display: flex;
     justify-content: center;
